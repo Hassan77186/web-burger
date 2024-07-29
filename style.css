@@ -1,0 +1,515 @@
+@font-face { font-family: kurdishfont; src: url('rudawbold.ttf'); }
+
+/*HEADER*/
+.head{
+    border-bottom: 2px solid white;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    z-index: 1000;
+}
+
+.nav{
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+
+
+}
+
+.h1{
+    font-family: "kurdishfont", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+    margin-inline: auto;
+    height: 24px;
+    margin-top: 8px;
+
+}
+
+.h2{
+    font-family: "kurdishfont", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+
+    padding-top: 3px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin-inline: auto;
+    height: 38px;
+
+}
+
+.h3{
+    font-family: "kurdishfont", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+
+    text-align: right;
+    max-width: 400px;
+    width: 100%;
+    margin-inline: auto;
+    height: 24px;
+    margin-top: 8px;
+
+}
+
+
+
+
+#plogo{
+    position: absolute;
+    margin-top: 2px;
+    width: 15px;
+
+}
+
+#langlist{
+    display: inline;
+    margin-right: 10px;
+
+}
+#langlist a{
+    font-family: "kurdishfont", sans-serif;
+
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    transition: color 0.5s;
+}
+
+#langlist a:hover{
+    color: orange;
+
+}
+
+#phonenumber{
+    display: inline;
+    height: 21px;
+    margin-left: 21px;
+}
+
+
+/*TOP*/
+body{
+    background-color:black;
+    margin: 0;
+    padding: 0;
+}
+.con{
+    margin-top: 75px;
+    max-width: 1000px;
+    width:90%;
+    margin-inline:auto ;
+    height: 1200px;
+}
+
+.con .image{
+    position: relative;
+    text-align: center;
+    background-color: black;
+    max-width: 1000px;
+    width: 100%;
+
+
+}
+.con .image #burgerimage{
+
+    object-fit: cover;
+    max-width: 1000px;
+    width: 100%;
+    height: 400px;
+}
+
+.con .box{
+    position: absolute;
+    inset:  0;
+    width: 250px;
+    height: 220px;
+    margin-block:auto;
+    margin-left: 100px;
+    color: white;
+
+}
+
+.con .box .heading{
+    font-family: "kurdishfont", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    
+    margin-inline:2px ;
+    margin-bottom: 10px;
+}
+.con .box .text{
+    font-family: "kurdishfont", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+
+    
+    text-align: right;
+
+    margin-inline:2px ;
+    margin-bottom: 10px;
+
+
+}
+.con .box .button_box{
+    text-align: center;
+
+    margin-inline:2px ;
+    margin-bottom: 15px;
+
+
+}
+.con .box .button_box button{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "kurdishfont", sans-serif;
+    border: none;
+    border-radius: 10px;
+
+    text-decoration: none;
+    background-color: orange;
+    width: 150px;
+    padding: 5px;
+    transition: background-color 0.5s;
+
+}
+
+.con .box .button_box button:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
+
+
+#burgerlist{
+    color: white;
+}
+
+.con .box .socialbar{
+    text-align: center;
+    margin-inline:2px ;
+    margin-bottom: 10px;
+
+
+}
+.con .box .socialbar button{
+    background: none;
+    border: none;
+}
+.con .box .socialbar button:hover{
+    cursor: pointer;
+}
+.con .box .socialbar button img{
+    width: 25px;
+}
+.con .box .socialbar button img:hover{
+    -webkit-filter: drop-shadow(0px 0px 8px white)
+    drop-shadow(0px 0px 8px white);
+filter: drop-shadow(0px 0px 8px white) 
+drop-shadow(0px 0px 8px white);
+}
+
+/*BURGER LIST*/
+
+
+#burgerlist{
+   
+    max-width: 950px;
+    width: 100%;
+    margin: 30px auto;
+
+}
+
+.burgertitle{
+    font-family: "kurdishfont", sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.burgerbody{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    max-width: 950px;
+    width: 100%;
+}
+
+.burger{
+    box-shadow: 0px 0px 12px orange;
+    margin: 10px;
+    margin-top: 50px;
+    background: linear-gradient(273deg, rgba(0,0,0,1) 0%, rgba(59,59,59,1) 35%, rgba(0,0,0,1) 100%);
+    width: 200px;
+    height: 220px;
+    border-radius: 20px;
+}
+
+.burgerbody .burger .burgerimage{
+
+    
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+.burgerbody .burger .burgerimage img{
+    border-bottom: 1px solid orange;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    object-fit: cover;
+    width: 200px;
+    height: 100px;
+}
+
+.burgerbody .burger .title{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "kurdishfont", sans-serif;
+    color: white;
+
+    text-align: center;
+    margin:6px auto;
+    width: 180px;
+
+}
+.burgerbody .burger .line{
+
+    border-bottom: 1px solid white;
+    width: 140px;
+    margin-inline:auto;
+
+}
+.burgerbody .burger .info{
+    text-align: center;
+    font-family: "kurdishfont", sans-serif;
+    font-size: 10px;
+    color: white;
+
+    width: 180px;
+    margin:8px auto;
+
+}
+
+.burgerbody .burger .price{
+
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 180px;
+    margin:10px auto;
+
+}
+
+/*DRINK LIST*/
+
+#drinklist{
+   
+    max-width: 950px;
+    width: 100%;
+    margin: 30px auto;
+
+}
+
+.drinktitle{
+    color: white;
+    font-family: "kurdishfont", sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: bold;
+}
+.drinkbody{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    max-width: 950px;
+    width: 100%;
+}
+
+.drink{
+    box-shadow: 0px 0px 12px orange;
+    margin: 10px;
+    margin-top: 50px;
+    background: linear-gradient(273deg, rgba(0,0,0,1) 0%, rgba(59,59,59,1) 35%, rgba(0,0,0,1) 100%);
+    width: 200px;
+    height: 220px;
+    border-radius: 20px;
+}
+
+.drinkbody .drink .drinkimage{
+
+    
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+.drinkbody .drink .drinkimage img{
+    border-bottom: 1px solid orange;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    object-fit: cover;
+    width: 200px;
+    height: 100px;
+}
+
+.drinkbody .drink .title{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "kurdishfont", sans-serif;
+    color: white;
+
+    text-align: center;
+    margin:6px auto;
+    width: 180px;
+
+}
+.drinkbody .drink .line{
+
+    border-bottom: 1px solid white;
+    width: 140px;
+    margin-inline:auto;
+
+}
+.drinkbody .drink .info{
+    text-align: center;
+    font-family: "kurdishfont", sans-serif;
+    font-size: 10px;
+    color: white;
+
+    width: 180px;
+    margin:8px auto;
+
+}
+
+.drinkbody .drink .price{
+
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 180px;
+    margin:10px auto;
+
+}
+
+/*FOOTER*/
+
+.footer{
+    border-top: 2px solid white;
+    background-color: black;
+    padding: 10px;
+    color: white;
+
+    max-width: 100%;
+    height: 120px;
+
+}
+
+.foot{
+    text-align: center;
+    display: flex;
+
+    width: 100%;
+}
+
+.f1{
+    margin: 0px auto;
+    max-width: 500px;
+    width: 75%;
+    height: 110px;
+}
+
+.f2{
+    margin: 0px auto;
+    max-width: 500px;
+    width: 75%;
+    height: 110px;
+}
+
+.develope{
+    padding: 50px;
+    font-family: "kurdishfont", sans-serif;
+    font-weight: bold;
+}
+
+.develope a{
+text-decoration: none;
+color: orange;
+transition: color 0.5s;
+}
+.develope a:hover{
+    text-decoration: none;
+    color: orangered;
+}
+
+.storeinformation{
+    text-align: right;
+    padding: 25px;
+    font-family: "kurdishfont", sans-serif;
+    font-weight: bold;
+}
+
+.storeinformation button{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "kurdishfont", sans-serif;
+    border: none;
+    border-radius: 10px;
+
+    text-decoration: none;
+    background-color: orange;
+    width: 150px;
+    padding: 5px;
+    transition: background-color 0.5s;
+}
+    
+.storeinformation button:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:600px){
+
+    .con{
+        height: 2600px;
+    }
+    .burger{
+        margin: 20px auto;
+    }
+    .drink{
+        margin: 20px auto;
+    }
+    .burgerbody{
+        display: block;
+    }
+
+    .drinkbody{
+        display: block;
+    }
+    .con .box{
+        margin-inline: auto;
+    }
+    .foot{
+        display: block;
+    }
+    .storeinformation{
+        text-align: center;
+    }
+}
